@@ -40,6 +40,6 @@ h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.15re
 <p class="source">Source: Freedom of Information response, long-term employment permit submissions 1 January to 22 October 2026. Graphic: The Quarry</p>
 </div>
 <script>
-(function(){var id="4-top-roles";function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:document.documentElement.scrollHeight},'*')}catch(e){}}
+(function(){var id="4-top-roles";function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:Math.ceil(document.body.getBoundingClientRect().height)},'*')}catch(e){}}
 window.addEventListener('load',post);if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);})();
 </script></body></html>

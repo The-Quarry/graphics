@@ -75,7 +75,7 @@ h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.15re
 
 HEIGHT_JS = """
 <script>
-(function(){var id=%s;function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:document.documentElement.scrollHeight},'*')}catch(e){}}
+(function(){var id=%s;function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:Math.ceil(document.body.getBoundingClientRect().height)},'*')}catch(e){}}
 window.addEventListener('load',post);if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);})();
 </script>"""
 
