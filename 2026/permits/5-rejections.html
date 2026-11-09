@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rejected applications</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap');
+:root{--ink:#111;--approved:#60A07D;--awaiting:#111;--withdrawn:#b9b9b0;--rejected:#c8553d;--track:rgba(0,0,0,.06);--muted:#4a4a4a}
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent;color:var(--ink);font-family:Poppins,system-ui,sans-serif}
+.chart{max-width:720px;margin:0 auto;padding:16px}
+h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.15rem,3.6vw,1.55rem);line-height:1.2;margin:0 0 6px}
+.dek{font-size:.88rem;line-height:1.45;color:var(--muted);margin:0 0 14px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;margin:0 0 14px;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:2px;display:inline-block;flex:none}
+.approved{background:var(--approved)}.awaiting{background:var(--awaiting)}
+.withdrawn{background:var(--withdrawn)}.rejected{background:var(--rejected)}
+.source{font-size:.7rem;color:var(--muted);margin-top:14px;line-height:1.4}
+.note{font-size:.75rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.rows{display:flex;flex-direction:column;gap:12px}
+.row .lab{font-size:.82rem;font-weight:500;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.row .lab span:last-child{font-weight:400;color:var(--muted);white-space:nowrap}
+.bar{display:flex;height:20px;background:var(--track);border-radius:2px;overflow:hidden}
+.bar div{height:100%}
+.bar div+div{box-shadow:inset 1px 0 0 rgba(255,255,255,.5)}
+</style></head>
+<body><div class="chart">
+
+<style>
+table{width:100%;border-collapse:collapse;font-size:.85rem}
+th{text-align:left;font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;border-bottom:2px solid var(--ink);padding:6px 8px 6px 0}
+td{padding:9px 8px 9px 0;border-bottom:1px solid rgba(0,0,0,.12);vertical-align:top}
+th:last-child,td:last-child{text-align:right;padding-right:0}
+tfoot td{font-weight:600;border-bottom:none;border-top:2px solid var(--ink)}
+</style>
+<h2>Nine applications refused</h2>
+<p class="dek">Every rejected long-term employment permit application, 1 January to 22 October 2026, out of 428 decided.</p>
+<table><thead><tr><th>Role</th><th>Sector</th><th>Rejected</th></tr></thead>
+<tbody><tr><td>Out-of-policy posts</td><td>Out of policy</td><td>3</td></tr><tr><td>Sous chef / senior sous / second chef</td><td>Hospitality</td><td>3</td></tr><tr><td>Night manager</td><td>Hospitality</td><td>1</td></tr><tr><td>Stonemason foreman</td><td>Construction</td><td>1</td></tr><tr><td>Retail store supervisor / assistant manager</td><td>Retail</td><td>1</td></tr></tbody><tfoot><tr><td>Total</td><td></td><td>9</td></tr></tfoot></table>
+
+<p class="source">Source: Freedom of Information response, long-term employment permit submissions 1 January to 22 October 2026. Graphic: The Quarry</p>
+</div>
+<script>
+(function(){var id="5-rejections";function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:document.documentElement.scrollHeight},'*')}catch(e){}}
+window.addEventListener('load',post);if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);})();
+</script></body></html>

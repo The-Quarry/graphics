@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Most-requested roles</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap');
+:root{--ink:#111;--approved:#60A07D;--awaiting:#111;--withdrawn:#b9b9b0;--rejected:#c8553d;--track:rgba(0,0,0,.06);--muted:#4a4a4a}
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent;color:var(--ink);font-family:Poppins,system-ui,sans-serif}
+.chart{max-width:720px;margin:0 auto;padding:16px}
+h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.15rem,3.6vw,1.55rem);line-height:1.2;margin:0 0 6px}
+.dek{font-size:.88rem;line-height:1.45;color:var(--muted);margin:0 0 14px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;margin:0 0 14px;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:2px;display:inline-block;flex:none}
+.approved{background:var(--approved)}.awaiting{background:var(--awaiting)}
+.withdrawn{background:var(--withdrawn)}.rejected{background:var(--rejected)}
+.source{font-size:.7rem;color:var(--muted);margin-top:14px;line-height:1.4}
+.note{font-size:.75rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.rows{display:flex;flex-direction:column;gap:12px}
+.row .lab{font-size:.82rem;font-weight:500;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.row .lab span:last-child{font-weight:400;color:var(--muted);white-space:nowrap}
+.bar{display:flex;height:20px;background:var(--track);border-radius:2px;overflow:hidden}
+.bar div{height:100%}
+.bar div+div{box-shadow:inset 1px 0 0 rgba(255,255,255,.5)}
+</style></head>
+<body><div class="chart">
+
+<h2>Health professionals, auditors and chefs top the list</h2>
+<p class="dek">The roles with the most long-term employment permit applications, 1 January to 22 October 2026.</p>
+<ul class="legend">
+<li><span class="sw approved"></span>Approved</li>
+<li><span class="sw rejected"></span>Rejected</li>
+<li><span class="sw withdrawn"></span>Withdrawn</li>
+<li><span class="sw awaiting"></span>Awaiting decision</li>
+</ul>
+<div class="rows"><div class="row"><div class="lab"><span>Regulated health professional</span><span>164 · 40% awaiting</span></div><div class="bar"><div class="approved" style="width:57.927%" title="95 approved"></div><div class="withdrawn" style="width:1.829%" title="3 withdrawn"></div><div class="awaiting" style="width:40.244%" title="66 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Audit manager / associate</span><span>63 · 48% awaiting</span></div><div class="bar"><div class="approved" style="width:18.902%" title="31 approved"></div><div class="withdrawn" style="width:1.220%" title="2 withdrawn"></div><div class="awaiting" style="width:18.293%" title="30 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Sous chef / senior sous / second chef</span><span>54 · 61% awaiting</span></div><div class="bar"><div class="approved" style="width:9.756%" title="16 approved"></div><div class="rejected" style="width:1.829%" title="3 rejected"></div><div class="withdrawn" style="width:1.220%" title="2 withdrawn"></div><div class="awaiting" style="width:20.122%" title="33 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Support worker (residential, respite, community)</span><span>45 · 71% awaiting</span></div><div class="bar"><div class="approved" style="width:7.927%" title="13 approved"></div><div class="awaiting" style="width:19.512%" title="32 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Audit assistant</span><span>42 · 81% awaiting</span></div><div class="bar"><div class="approved" style="width:3.659%" title="6 approved"></div><div class="withdrawn" style="width:1.220%" title="2 withdrawn"></div><div class="awaiting" style="width:20.732%" title="34 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Assistant general manager (hotel, restaurant, bar)</span><span>38 · 63% awaiting</span></div><div class="bar"><div class="approved" style="width:8.537%" title="14 approved"></div><div class="awaiting" style="width:14.634%" title="24 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Healthcare assistant</span><span>32 · 56% awaiting</span></div><div class="bar"><div class="approved" style="width:6.707%" title="11 approved"></div><div class="withdrawn" style="width:1.829%" title="3 withdrawn"></div><div class="awaiting" style="width:10.976%" title="18 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Senior carer (residential / nursing home)</span><span>20 · 40% awaiting</span></div><div class="bar"><div class="approved" style="width:6.707%" title="11 approved"></div><div class="withdrawn" style="width:0.610%" title="1 withdrawn"></div><div class="awaiting" style="width:4.878%" title="8 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Law firm associate / assistant</span><span>20 · 20% awaiting</span></div><div class="bar"><div class="approved" style="width:9.756%" title="16 approved"></div><div class="awaiting" style="width:2.439%" title="4 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Advisory manager / associate (accountancy)</span><span>20 · 45% awaiting</span></div><div class="bar"><div class="approved" style="width:6.098%" title="10 approved"></div><div class="withdrawn" style="width:0.610%" title="1 withdrawn"></div><div class="awaiting" style="width:5.488%" title="9 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Secondary class teacher</span><span>19 · 5% awaiting</span></div><div class="bar"><div class="approved" style="width:10.976%" title="18 approved"></div><div class="awaiting" style="width:0.610%" title="1 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Head chef</span><span>19 · 79% awaiting</span></div><div class="bar"><div class="approved" style="width:2.439%" title="4 approved"></div><div class="awaiting" style="width:9.146%" title="15 awaiting decision"></div></div></div></div>
+<p class="note">Roles with 19 or more applications. A further 98 applications were for posts outside the in-policy list.</p>
+
+<p class="source">Source: Freedom of Information response, long-term employment permit submissions 1 January to 22 October 2026. Graphic: The Quarry</p>
+</div>
+<script>
+(function(){var id="4-top-roles";function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:document.documentElement.scrollHeight},'*')}catch(e){}}
+window.addEventListener('load',post);if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);})();
+</script></body></html>

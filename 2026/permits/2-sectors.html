@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Permit applications by sector</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap');
+:root{--ink:#111;--approved:#60A07D;--awaiting:#111;--withdrawn:#b9b9b0;--rejected:#c8553d;--track:rgba(0,0,0,.06);--muted:#4a4a4a}
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent;color:var(--ink);font-family:Poppins,system-ui,sans-serif}
+.chart{max-width:720px;margin:0 auto;padding:16px}
+h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.15rem,3.6vw,1.55rem);line-height:1.2;margin:0 0 6px}
+.dek{font-size:.88rem;line-height:1.45;color:var(--muted);margin:0 0 14px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;margin:0 0 14px;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:2px;display:inline-block;flex:none}
+.approved{background:var(--approved)}.awaiting{background:var(--awaiting)}
+.withdrawn{background:var(--withdrawn)}.rejected{background:var(--rejected)}
+.source{font-size:.7rem;color:var(--muted);margin-top:14px;line-height:1.4}
+.note{font-size:.75rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.rows{display:flex;flex-direction:column;gap:12px}
+.row .lab{font-size:.82rem;font-weight:500;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.row .lab span:last-child{font-weight:400;color:var(--muted);white-space:nowrap}
+.bar{display:flex;height:20px;background:var(--track);border-radius:2px;overflow:hidden}
+.bar div{height:100%}
+.bar div+div{box-shadow:inset 1px 0 0 rgba(255,255,255,.5)}
+</style></head>
+<body><div class="chart">
+
+<h2>Health, hospitality and accountancy account for six in ten applications</h2>
+<p class="dek">Long-term employment permit applications by sector and outcome, 1 January to 22 October 2026.</p>
+<ul class="legend">
+<li><span class="sw approved"></span>Approved</li>
+<li><span class="sw rejected"></span>Rejected</li>
+<li><span class="sw withdrawn"></span>Withdrawn</li>
+<li><span class="sw awaiting"></span>Awaiting decision</li>
+</ul>
+<div class="rows"><div class="row"><div class="lab"><span>Health and social care</span><span>264 · 48% awaiting</span></div><div class="bar"><div class="approved" style="width:49.621%" title="131 approved"></div><div class="withdrawn" style="width:2.652%" title="7 withdrawn"></div><div class="awaiting" style="width:47.727%" title="126 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Hospitality</span><span>178 · 59% awaiting</span></div><div class="bar"><div class="approved" style="width:24.242%" title="64 approved"></div><div class="rejected" style="width:1.515%" title="4 rejected"></div><div class="withdrawn" style="width:1.894%" title="5 withdrawn"></div><div class="awaiting" style="width:39.773%" title="105 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Accountancy</span><span>160 · 59% awaiting</span></div><div class="bar"><div class="approved" style="width:22.727%" title="60 approved"></div><div class="withdrawn" style="width:2.273%" title="6 withdrawn"></div><div class="awaiting" style="width:35.606%" title="94 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Out of policy</span><span>98 · 90% awaiting</span></div><div class="bar"><div class="approved" style="width:2.273%" title="6 approved"></div><div class="rejected" style="width:1.136%" title="3 rejected"></div><div class="withdrawn" style="width:0.379%" title="1 withdrawn"></div><div class="awaiting" style="width:33.333%" title="88 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Construction</span><span>50 · 60% awaiting</span></div><div class="bar"><div class="approved" style="width:6.818%" title="18 approved"></div><div class="rejected" style="width:0.379%" title="1 rejected"></div><div class="withdrawn" style="width:0.379%" title="1 withdrawn"></div><div class="awaiting" style="width:11.364%" title="30 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Education (all phases)</span><span>34 · 15% awaiting</span></div><div class="bar"><div class="approved" style="width:10.985%" title="29 approved"></div><div class="awaiting" style="width:1.894%" title="5 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Fund services</span><span>31 · 48% awaiting</span></div><div class="bar"><div class="approved" style="width:5.682%" title="15 approved"></div><div class="withdrawn" style="width:0.379%" title="1 withdrawn"></div><div class="awaiting" style="width:5.682%" title="15 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Legal services</span><span>28 · 25% awaiting</span></div><div class="bar"><div class="approved" style="width:7.955%" title="21 approved"></div><div class="awaiting" style="width:2.652%" title="7 awaiting decision"></div></div></div><div class="row"><div class="lab"><span>Other sectors (16)</span><span>157 · 48% awaiting</span></div><div class="bar"><div class="approved" style="width:28.409%" title="75 approved"></div><div class="rejected" style="width:0.379%" title="1 rejected"></div><div class="withdrawn" style="width:2.273%" title="6 withdrawn"></div><div class="awaiting" style="width:28.409%" title="75 awaiting decision"></div></div></div></div>
+<p class="note">Education combines further, primary, secondary, special educational needs, music and education services. Other sectors include fiduciary, compliance, facilities, banking, law enforcement, retail and transport.</p>
+
+<p class="source">Source: Freedom of Information response, long-term employment permit submissions 1 January to 22 October 2026. Graphic: The Quarry</p>
+</div>
+<script>
+(function(){var id="2-sectors";function post(){try{parent.postMessage({type:'quarry-chart-height',id:id,height:document.documentElement.scrollHeight},'*')}catch(e){}}
+window.addEventListener('load',post);if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);})();
+</script></body></html>
